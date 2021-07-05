@@ -332,11 +332,12 @@
         <!-- END: Checkpoint Block -->
 
         <CustomBehavior File="Message" Text="Compiling Goldshire Quests" LogColor="CornflowerBlue" />
-
+		
+		<!--Hearth selection fix Tauri -->
         <If Condition="!IsQuestCompleted(62) &amp;&amp; Me.HearthstoneAreaId != 5148" >
             <CustomBehavior File="Message" Text="Moving to set hearth to Stormwind" LogColor="Red" />
             <MoveTo DestName="Moving to set hearth to Stormwind" X="-8865.525" Y="635.5101" Z="96.06046" />
-            <CustomBehavior File="InteractWith" MobId="6740" InteractByGossipOptions="1"
+            <CustomBehavior File="InteractWith" MobId="6740" InteractByGossipOptions="2"
                             X="-8867.786" Y="673.6729" Z="97.90324" />
         </If>
 

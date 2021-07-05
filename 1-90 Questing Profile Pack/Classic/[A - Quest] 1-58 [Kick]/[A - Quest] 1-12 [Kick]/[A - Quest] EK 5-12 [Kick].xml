@@ -388,10 +388,10 @@
                 X="-9923.681" Y="38.38715" Z="32.41258" />
         <PickUp QuestName="Goldtooth" QuestId="87" GiverName="Billy Maclure" GiverId="247"
                 X="-9923.681" Y="38.38715" Z="32.41258" />
-        <!-- <If Condition="HasQuest(26150)" > -->
-        <!--     <TurnIn QuestName="A Visit With Maybell" QuestId="26150" TurnInName="Maybell Maclure" TurnInId="251" -->
-        <!--             X="-10014.04" Y="37.6059" Z="35.1707" /> -->
-        <!-- </If> -->
+		<If Condition="HasQuest(26150)" > 
+             <TurnIn QuestName="A Visit With Maybell" QuestId="26150" TurnInName="Maybell Maclure" TurnInId="251" 
+                     X="-10014.04" Y="37.6059" Z="35.1707" /> 
+        </If> 
 		<Objective QuestName="Gold Dust Exchange" QuestId="47" Type="CollectItem" ItemId="773" CollectCount="10" />
         <Objective QuestName="Kobold Candles" QuestId="60" Type="CollectItem" ItemId="772" CollectCount="8" />
 		<TurnIn QuestName="Kobold Candles" QuestId="60" TurnInName="William Pestle" TurnInId="253"
