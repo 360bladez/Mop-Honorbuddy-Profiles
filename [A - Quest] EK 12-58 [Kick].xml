@@ -4344,10 +4344,10 @@
         </SetVendor>
 
 
-         <PickUp QuestName="Hero's Call: Redridge Mountains!" QuestId="28563" GiverName="Captain Danuvin" 
-         GiverId="206111" X="-8823.851" Y="630.5729" Z="94.136" /> 
+        <!-- <PickUp QuestName="Hero's Call: Redridge Mountains!" QuestId="26365" GiverName="Captain Danuvin" -->
+        <!-- GiverId="821" X="-10509.97" Y="1040.674" Z="60.51849" /> -->
 
-        <If Condition="!IsQuestCompleted(28563)">
+        <If Condition="!IsQuestCompleted(26640)">
             <If Condition="!HasQuest(26510) &amp;&amp; !IsQuestCompleted(26510)">
                 <CustomBehavior File="RunMacro"
                                 Macro="/run for i=1,GetNumQuestLogEntries() do SelectQuestLogEntry(i); SetAbandonQuest(); AbandonQuest(); end" />
