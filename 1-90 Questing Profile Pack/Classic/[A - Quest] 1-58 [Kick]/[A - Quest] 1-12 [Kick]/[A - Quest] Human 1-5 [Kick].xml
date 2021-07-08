@@ -94,10 +94,10 @@
                     X="-8918.364" Y="-208.4109" Z="82.12605" />
             <TurnIn QuestName="Join the Battle!" QuestId="29080" TurnInName="Sergeant Willem" TurnInId="823"
                     X="-8827.837" Y="-158.6233" Z="79.85906" />
-            <PickUp QuestName="They Sent Assassins" QuestId="29081" GiverName="Sergeant Willem" GiverId="823"
+            <PickUp QuestName="They Sent Assassins" QuestId="28792" GiverName="Sergeant Willem" GiverId="823"
                     X="-8827.837" Y="-158.6233" Z="79.85906" />
-            <Objective QuestName="They Sent Assassins" QuestId="29081" Type="KillMob" MobId="50039" KillCount="8" />
-            <TurnIn QuestName="They Sent Assassins" QuestId="29081" TurnInName="Sergeant Willem" TurnInId="823"
+            <Objective QuestName="They Sent Assassins" QuestId="28792" Type="KillMob" MobId="50039" KillCount="8" />
+            <TurnIn QuestName="They Sent Assassins" QuestId="28792" TurnInName="Sergeant Willem" TurnInId="823"
                     X="-8827.837" Y="-158.6233" Z="79.85906" />
             <PickUp QuestName="The Rear is Clear" QuestId="29083" GiverName="Sergeant Willem" GiverId="823"
                     X="-8827.837" Y="-158.6233" Z="79.85906" />
@@ -342,18 +342,20 @@
                 <TurnIn QuestName="Hallowed Letter" QuestId="3103" TurnInName="Priestess Anetta" TurnInId="375" />
                 <PickUp QuestName="Learning the Word" QuestId="26919" GiverName="Priestess Anetta" GiverId="375" />
                 <CustomBehavior File="ForceSetVendor" QuestId="26919" DoSell="true" />
-                <CustomBehavior File="InteractWith" QuestId="26919" InteractByCastingSpellId="589" MobId="44175"
+				<!-- Fixed attacking dummies -->
+                <CustomBehavior File="InteractWith" QuestId="26919" InteractByCastingSpellId="589" MobId="44548"
                                 NumOfTimes="5" X="-8969.78" Y="-146.455" Z="81.50681" />
                 <TurnIn QuestName="Learning the Word" QuestId="26919" TurnInName="Priestess Anetta" TurnInId="375" />
                 <PickUp QuestName="Join the Battle!" QuestId="28786" GiverName="Priestess Anetta" GiverId="375" />
                 <TurnIn QuestName="Join the Battle!" QuestId="28786" TurnInName="Sergeant Willem" TurnInId="823"
                         X="-8827.837" Y="-158.6233" Z="79.85906" />
-                <PickUp QuestName="Fear No Evil" QuestId="28810" GiverName="Brother Paxton" GiverId="951" />
-                <While Condition="HasQuest(28810) &amp;&amp; !IsQuestCompleted(28810)" >
-                    <CustomBehavior File="InteractWith" QuestId="28810" MobId="50047" NumOfTimes="4"
-                                    CollectionDistance="500" X="-8769.394" Y="-190.3564" Z="84.5011" />
+                <PickUp QuestName="Fear No Evil" QuestId="28808" GiverName="Brother Paxton" GiverId="951" />
+                <While Condition="HasQuest(28808) &amp;&amp; !IsQuestCompleted(28808)" >
+                    <CustomBehavior File="InteractWith" QuestId="28808" MobId="50047" NumOfTimes="4"
+                                    CollectionDistance="50" X="-8771.92" Y="-118.02" Z="83.18" />
+
                 </While>
-                <TurnIn QuestName="Fear No Evil" QuestId="28810" TurnInName="Brother Paxton" TurnInId="951" />
+                <TurnIn QuestName="Fear No Evil" QuestId="28808" TurnInName="Brother Paxton" TurnInId="951" />
                 <PickUp QuestName="They Sent Assassins" QuestId="28794" GiverName="Sergeant Willem" GiverId="823"
                         X="-8827.837" Y="-158.6233" Z="79.85906" />
                 <Objective QuestName="They Sent Assassins" QuestId="28794" Type="KillMob" MobId="50039" KillCount="8" />
@@ -390,12 +392,13 @@
                 <PickUp QuestName="Join the Battle!" QuestId="28784" GiverName="Khelden Bremen" GiverId="198" />
                 <TurnIn QuestName="Join the Battle!" QuestId="28784" TurnInName="Sergeant Willem" TurnInId="823"
                         X="-8827.837" Y="-158.6233" Z="79.85906" />
-                <PickUp QuestName="Fear No Evil" QuestId="28808" GiverName="Brother Paxton" GiverId="951" />
-                <While Condition="HasQuest(28808) &amp;&amp; !IsQuestCompleted(28808)" >
-                    <CustomBehavior File="InteractWith" QuestId="28808" MobId="50047" NumOfTimes="4"
+						<!--correction for quest-->
+                <PickUp QuestName="Fear No Evil" QuestId="28810" GiverName="Brother Paxton" GiverId="951" />
+                <While Condition="HasQuest(28810) &amp;&amp; !IsQuestCompleted(28810)" >
+                    <CustomBehavior File="InteractWith" QuestId="28810" MobId="50047" NumOfTimes="4"
                                     CollectionDistance="500" X="-8769.394" Y="-190.3564" Z="84.5011" />
                 </While>
-                <TurnIn QuestName="Fear No Evil" QuestId="28808" TurnInName="Brother Paxton" TurnInId="951" />
+                <TurnIn QuestName="Fear No Evil" QuestId="28810" TurnInName="Brother Paxton" TurnInId="951" />
                 <PickUp QuestName="They Sent Assassins" QuestId="28792" GiverName="Sergeant Willem" GiverId="823"
                         X="-8827.837" Y="-158.6233" Z="79.85906" />
                 <Objective QuestName="They Sent Assassins" QuestId="28792" Type="KillMob" MobId="50039" KillCount="8" />
@@ -510,7 +513,7 @@
         <GrindTo Level="5" />
         <!-- Elwynn Forest -->
 
-        <CustomBehavior File="LoadProfile" ProfileName="[A - Quest] EK 5-12 [Kick]" RememberProfile="true" />
+        <CustomBehavior File="LoadProfile" ProfileName="[A - Quest] EK 5-12 [kick]" RememberProfile="true" />
 
     </QuestOrder>
 

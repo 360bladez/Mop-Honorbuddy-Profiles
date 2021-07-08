@@ -3973,8 +3973,8 @@
         <If Condition="!IsQuestCompleted(26761)">
             <If Condition="Me.HearthstoneAreaId != 5148">
                 <CustomBehavior File="Message" Text="Moving to set hearth to SW Innkeeper" LogColor="Red" />
-                <CustomBehavior File="InteractWith" MobId="6740" InteractByGossipOptions="1"
-                                X="-8867.786" Y="673.6729" Z="97.90324" />
+				<CustomBehavior File="InteractWith" MobId="6740" InteractByGossipOptions="2"
+                            X="-9277.353" Y="-1180.719" Z="70.88439" />
                 <CustomBehavior File="RunMacro"
                                 Macro="/run for i=1,GetNumQuestLogEntries() do SelectQuestLogEntry(i); SetAbandonQuest(); AbandonQuest(); end" />
             </If>

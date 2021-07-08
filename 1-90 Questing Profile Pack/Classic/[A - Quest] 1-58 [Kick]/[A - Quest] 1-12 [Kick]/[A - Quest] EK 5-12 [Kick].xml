@@ -148,7 +148,7 @@
                 <Mob Id="327" Name="Goldtooth" />
             </CollectFrom>
             <Hotspots>
-                <Hotspot X="-9803.375" Y="138.1248" Z="52.31993" />
+                <Hotspot X="-9812.604" Y="142.0642" Z="52.06493" />
             </Hotspots>
         </Objective>
     </Quest>
